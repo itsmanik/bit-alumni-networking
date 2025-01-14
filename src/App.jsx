@@ -9,8 +9,8 @@ import ErrorPage from "./components/Error/Error";
 // import CollegeSignup from "./components/Auth/CollegeSignup";
 // import AlumniSignup from "./components/Auth/AlumniSignup";
 // import Chat from "./components/Chat/Chat";
-// import AlumniEventCreate from "./components/Event/AlumniEventCreate";
-// import Events from "./components/Event/Events";
+import AlumniEventCreate from "./components/Event/AlumniEventCreate";
+import Events from "./components/Event/Events";
 // import Notifications from "./components/Notifications/Notifications";
 // import Jobs from "./components/Jobs/Jobs";
 // import JobFormPage from "./components/Jobs/JobFormPage";
@@ -57,14 +57,14 @@ const router = createBrowserRouter([
       //   path: "/messaging",
       //   element: <Chat />,
       // },
-      // {
-      //   path: "/create-event",
-      //   element: <AlumniEventCreate />,
-      // },
-      // {
-      //   path: "/events",
-      //   element: <Events />,
-      // },
+      {
+        path: "/create-event",
+        element: <AlumniEventCreate />,
+      },
+      {
+        path: "/events",
+        element: <Events />,
+      },
       // {
       //   path: "/notifications",
       //   element: <Notifications />,

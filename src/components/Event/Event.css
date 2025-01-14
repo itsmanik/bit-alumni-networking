@@ -1,0 +1,66 @@
+/* Event.css */
+.event-card:hover .text-lg {
+  color: #2563eb; /* Light blue shade on hover */
+}
+
+.event-card:hover img {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+.fade-in {
+  animation: fadeIn 0.3s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.modal-content {
+  transition: transform 0.3s ease;
+  background-color: #ffffff; /* Light background for modal */
+  border: 1px solid #e5e7eb; /* Subtle border for light theme */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  border-radius: 8px;
+}
+
+/* Additional Light Theme Adjustments */
+body {
+  background-color: #f9fafb; /* Light background for the page */
+  color: #374151; /* Dark gray text for readability */
+}
+
+.event-card {
+  background-color: #ffffff; /* White background for cards */
+  border: 1px solid #e5e7eb; /* Subtle border for card separation */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.event-card:hover {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+.text-lg {
+  color: #1f2937; /* Dark gray for large text */
+}
