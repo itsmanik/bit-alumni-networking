@@ -11,7 +11,7 @@ import ErrorPage from "./components/Error/Error";
 // import Chat from "./components/Chat/Chat";
 import AlumniEventCreate from "./components/Event/AlumniEventCreate";
 import Events from "./components/Event/Events";
-// import Notifications from "./components/Notifications/Notifications";
+import Notifications from "./components/Notifications/Notifications";
 // import Jobs from "./components/Jobs/Jobs";
 // import JobFormPage from "./components/Jobs/JobFormPage";
 import Explore from "./components/Explore/Explore";
@@ -19,7 +19,7 @@ import Explore from "./components/Explore/Explore";
 import Connections from "./components/Connections/Connections";
 // import Help from "./components/Help/Help";
 // import AnalyticsPage from "./components/Analytics/AnalyticsPage";
-// import Profile from "./components/Profile/Profile";
+import Profile from "./components/Profile/Profile";
 // import AnnouncementsList from "./components/Announcements/AnnouncementList";
 // import PostAnnouncement from "./components/Announcements/PostAnnouncement";
 
@@ -65,10 +65,10 @@ const router = createBrowserRouter([
         path: "/events",
         element: <Events />,
       },
-      // {
-      //   path: "/notifications",
-      //   element: <Notifications />,
-      // },
+      {
+        path: "/notifications",
+        element: <Notifications />,
+      },
       // {
       //   path: "/jobs",
       //   element: <Jobs />,
@@ -101,10 +101,10 @@ const router = createBrowserRouter([
       //   path: "/help",
       //   element: <Help />,
       // },
-      // {
-      //   path: "/profile",
-      //   element: <Profile />,
-      // },
+      {
+        path: "/profile",
+        element: <Profile />,
+      },
       // {
       //   path: "/post-announcement",
       //   element: <PostAnnouncement />,
