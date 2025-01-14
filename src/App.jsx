@@ -8,7 +8,7 @@ import ErrorPage from "./components/Error/Error";
 // import StudentSignup from "./components/Auth/StudentSignup";
 // import CollegeSignup from "./components/Auth/CollegeSignup";
 // import AlumniSignup from "./components/Auth/AlumniSignup";
-// import Chat from "./components/Chat/Chat";
+import Chat from "./components/Chat/Chat";
 import AlumniEventCreate from "./components/Event/AlumniEventCreate";
 import Events from "./components/Event/Events";
 import Notifications from "./components/Notifications/Notifications";
@@ -18,7 +18,7 @@ import Explore from "./components/Explore/Explore";
 // import CollegeEvent from "./components/College/CollegeEvent";
 import Connections from "./components/Connections/Connections";
 // import Help from "./components/Help/Help";
-// import AnalyticsPage from "./components/Analytics/AnalyticsPage";
+import AnalyticsPage from "./components/Analytics/AnalyticsPage";
 import Profile from "./components/Profile/Profile";
 // import AnnouncementsList from "./components/Announcements/AnnouncementList";
 // import PostAnnouncement from "./components/Announcements/PostAnnouncement";
@@ -53,10 +53,10 @@ const router = createBrowserRouter([
       //   path: "/signup/alumni",
       //   element: <AlumniSignup />,
       // },
-      // {
-      //   path: "/messaging",
-      //   element: <Chat />,
-      // },
+      {
+        path: "/messaging",
+        element: <Chat />,
+      },
       {
         path: "/create-event",
         element: <AlumniEventCreate />,
@@ -81,10 +81,10 @@ const router = createBrowserRouter([
         path: "/explore",
         element: <Explore />,
       },
-      // {
-      //   path: "/analytics",
-      //   element: <AnalyticsPage />,
-      // },
+      {
+        path: "/analytics",
+        element: <AnalyticsPage />,
+      },
       // {
       //   path: "/chat",
       //   element: <Chat />,
