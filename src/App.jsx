@@ -16,7 +16,7 @@ import ErrorPage from "./components/Error/Error";
 // import JobFormPage from "./components/Jobs/JobFormPage";
 import Explore from "./components/Explore/Explore";
 // import CollegeEvent from "./components/College/CollegeEvent";
-// import Connections from "./components/Connections/Connections";
+import Connections from "./components/Connections/Connections";
 // import Help from "./components/Help/Help";
 // import AnalyticsPage from "./components/Analytics/AnalyticsPage";
 // import Profile from "./components/Profile/Profile";
@@ -89,10 +89,10 @@ const router = createBrowserRouter([
       //   path: "/chat",
       //   element: <Chat />,
       // },
-      // {
-      //   path: "/connections",
-      //   element: <Connections />,
-      // },
+      {
+        path: "/connections",
+        element: <Connections />,
+      },
       // {
       //   path: "/college-event",
       //   element: <CollegeEvent />,

@@ -1,0 +1,172 @@
+.mainContainer {
+    padding: 20px;
+  }
+  
+  .sectionTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  .connectionsList {
+    display: grid;
+    justify-items: center;
+    row-gap: 2rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .invitationSection {
+    margin-bottom: 30px;
+  }
+  
+  .invitationsList {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .invitationCard {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .invitationDetails {
+    margin-left: 10px;
+  }
+  
+  .invitationName {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #383838;
+  }
+  
+  .invitationJob {
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .invitationButton {
+    background-color: #40983f;
+    margin-right: 1rem;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .invitationButton2 {
+    background-color: #983f3f;
+    margin-right: 1rem;
+    color: white;
+    border: none;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    padding: 4px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .invitationButton:hover {
+    background-color: #007d00;
+  }
+  .invitationButton2:hover {
+    background-color: #8b0000;
+  }
+  
+  .connectionSection {
+    margin-top: 20px;
+  }
+  
+  .connectionCard {
+    display: inline-block;
+    width: 180px;
+    text-align: center;
+    margin-right: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    color: rgb(33, 33, 33);
+    border-radius: 8px;
+    padding: 15px;
+  }
+  
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modalContent {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .modalTitle {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: black !important;
+  }
+  
+  .modalJob {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .modalActions {
+    margin-bottom: 15px;
+  }
+  
+  .acceptButton,
+  .rejectButton {
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .acceptButton {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .rejectButton {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .acceptButton:hover {
+    background-color: #45a049;
+  }
+  
+  .rejectButton:hover {
+    background-color: #e53935;
+  }
+  
+  .closeModal {
+    background-color: #888;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .closeModal:hover {
+    background-color: #666;
+  }
+  
