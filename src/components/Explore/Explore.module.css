@@ -1,94 +1,151 @@
+/* Container for the grid layout */
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    row-gap: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  row-gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  /* On medium screens (e.g., tablets), change to two columns */
+  .container {
+    grid-template-columns: 1fr 1fr;
   }
-  
+}
+
+@media (max-width: 640px) {
+  /* On small screens (e.g., mobile), change to one column */
+  .container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Box styling */
+.box {
+  display: flex;
+  padding: 1.5rem;
+  flex-direction: column;
+  max-width: 23rem;
+  background-color: white;
+  margin: 0 auto; /* Centering on smaller screens */
+}
+
+@media (max-width: 640px) {
+  /* On small screens, reduce max-width of the box */
   .box {
-    display: flex;
-    padding: 1.5rem;
-    flex-direction: column;
-    max-width: 23rem;
-    background-color: white;
+    max-width: 90%;
   }
-  
+}
+
+/* Image styling */
+.img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 0.125rem;
+  height: 16rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 640px) {
+  /* On medium and larger screens, reduce the image height */
   .img {
-    aspect-ratio: 1 / 1;
-    object-fit: cover;
-    border-radius: 0.125rem;
-    height: 16rem;
-    margin-bottom: 1rem;
-    @media (min-width: 640px) {
-      height: 15rem;
-    }
+    height: 15rem;
   }
-  
-  .username {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+  /* On smaller screens, further reduce the image height */
+  .img {
+    height: 12rem;
   }
-  
-  .position {
-    display: block;
-    padding-bottom: 0.5rem;
-    font-size: 0.875rem;
-    line-height: 1.25rem;
-    color: gray;
-  }
-  
-  .button {
-    display: flex;
-    background-color: #41932d;
-    padding: 0.75rem;
-    color: white;
-    margin-top: 1rem;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.375rem;
-    width: 100%;
-    font-weight: 600;
-    letter-spacing: 0.025em;
-    margin-top: auto;
-  }
-  
+}
+
+/* Username text */
+.username {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+/* Position text */
+.position {
+  display: block;
+  padding-bottom: 0.5rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: gray;
+}
+
+/* Button styling */
+.button {
+  display: flex;
+  background-color: #41932d;
+  padding: 0.75rem;
+  color: white;
+  margin-top: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.375rem;
+  width: 100%;
+  font-weight: 600;
+  letter-spacing: 0.025em;
+  margin-top: auto;
+}
+
+/* Search bar styling */
+.searchBar {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px 0;
+  color: black;
+}
+
+@media (max-width: 640px) {
+  /* On small screens, stack the search elements */
   .searchBar {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    padding: 20px 0;
-    color: black;
+    flex-direction: column;
   }
-  
-  .one {
-    padding-bottom: 1rem;
-  }
-  
+}
+
+.one {
+  padding-bottom: 1rem;
+}
+
+/* Search input styling */
+.searchInput {
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 300px;
+  max-width: 100%;
+}
+
+@media (max-width: 640px) {
+  /* On small screens, make the input width 100% */
   .searchInput {
-    padding: 12px 20px;
-    font-size: 16px;
-    border-radius: 4px;
-    border: 1px solid #ccc;
-    width: 300px;
-    max-width: 100%;
+    width: 100%;
   }
-  
-  .searchButton {
-    padding: 12px 20px;
-    background-color: #6c6c6c;
-    color: white;
-    font-size: 16px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .searchButton:hover {
-    background-color: var(--darkPurple);
-  }
-  
-  .gray {
-    background-color: gray;
-  }
+}
+
+/* Search button styling */
+.searchButton {
+  padding: 12px 20px;
+  background-color: #6c6c6c;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.searchButton:hover {
+  background-color: var(--darkPurple);
+}
+
+/* Gray background */
+.gray {
+  background-color: gray;
+}

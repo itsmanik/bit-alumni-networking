@@ -94,7 +94,7 @@ const Explore = () => {
       <div className={classes.searchBar}>
         <input
           type="text"
-          placeholder="Search for alumni by name..."
+          placeholder="BIT Alumnis open for mentorship..."
           className={classes.searchInput}
         />
 
