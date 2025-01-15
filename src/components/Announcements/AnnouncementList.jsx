@@ -3,20 +3,29 @@ import React, { useState, useEffect } from "react";
 const AnnouncementsList = () => {
   const [announcements, setAnnouncements] = useState([
     {
-      id: 1,
-      title: "Welcome to the Alumni Portal!",
-      message: "We are thrilled to have you here. Stay tuned for updates.",
-      user_name: "Admin",
-      created_at: "2025-01-01T10:00:00Z",
+      "id": 3,
+      "title": "Alumni Donation to Support Current Students",
+      "message": "We are proud to announce that an esteemed alumni member, John Doe, has generously donated $50,000 to support scholarships and career development programs for our current students. This contribution will help nurture the next generation of leaders. We are grateful for this continued support and invite all alumni to consider contributing to the future of BIT Sindri students.",
+      "user_name": "Alumni Relations",
+      "created_at": "2025-01-15T09:00:00Z"
     },
     {
-      id: 2,
-      title: "Upcoming Webinar",
-      message: "Join us for an exclusive webinar on career advancements.",
-      user_name: "Webinar Team",
-      created_at: "2025-01-10T15:30:00Z",
+      "id": 2,
+      "title": "Upcoming Webinar",
+      "message": "Join us for an exclusive webinar on career advancements.",
+      "user_name": "Webinar Team",
+      "created_at": "2025-01-10T15:30:00Z"
     },
-  ]);
+    ,
+    {
+      "id": 4,
+      "title": "Alumni Mentorship Program Launched",
+      "message": "We are excited to launch a new alumni mentorship program aimed at connecting current students with alumni mentors. This program will help students gain valuable insights into the industry, receive guidance on career choices, and enhance their professional networks. Sign up today and be part of shaping the future of BIT Sindri.",
+      "user_name": "Alumni Relations",
+      "created_at": "2025-01-15T12:00:00Z"
+    }
+  ]
+  );
   const [error, setError] = useState(null);
 
   useEffect(() => {
