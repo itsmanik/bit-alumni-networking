@@ -82,7 +82,7 @@ const Connections = () => {
     <div className={classes.mainContainer}>
       {/* Invitations Section */}
       <div className={classes.invitationSection}>
-        <h2 className={classes.sectionTitle}>Connection Invitations</h2>
+        <h2 className={classes.sectionTitle}>Alumni Connection Invitations</h2>
         {invitations.length > 0 ? (
           <div className={classes.invitationsList}>
             {invitations.map((invitation, index) => (
@@ -118,7 +118,7 @@ const Connections = () => {
 
       {/* Connections Section */}
       <div className={classes.connectionSection}>
-        <h2 className={classes.sectionTitle}>Your Connections</h2>
+        <h2 className={classes.sectionTitle}>Your Alumni Connections</h2>
         {connections.length > 0 ? (
           <div className={classes.connectionsList}>
             {connections.map((connection, index) => (

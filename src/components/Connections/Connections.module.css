@@ -1,172 +1,220 @@
+/* Main container */
 .mainContainer {
-    padding: 20px;
-  }
-  
-  .sectionTitle {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #555;
-  }
+  padding: 20px;
+}
 
+/* Section title */
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* Connections list grid layout */
+.connectionsList {
+  display: grid;
+  justify-items: center;
+  row-gap: 2rem;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media (max-width: 1024px) {
+  /* On medium screens (e.g., tablets), change to 2 columns */
   .connectionsList {
-    display: grid;
-    justify-items: center;
-    row-gap: 2rem;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
-  
-  .invitationSection {
-    margin-bottom: 30px;
+}
+
+@media (max-width: 640px) {
+  /* On small screens (e.g., mobile), change to 1 column */
+  .connectionsList {
+    grid-template-columns: 1fr;
   }
-  
-  .invitationsList {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .invitationCard {
-    display: flex;
-    align-items: center;
-    margin-bottom: 15px;
-    padding: 15px 20px;
-    border: 1px solid #ddd;
-    background-color: white;
-    border-radius: 8px;
-  }
-  
-  .invitationDetails {
-    margin-left: 10px;
-  }
-  
-  .invitationName {
-    font-weight: bold;
-    font-size: 1.2rem;
-    color: #383838;
-  }
-  
-  .invitationJob {
-    font-size: 0.9rem;
-    color: #555;
-  }
-  
-  .invitationButton {
-    background-color: #40983f;
-    margin-right: 1rem;
-    color: white;
-    border: none;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    padding: 4px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  .invitationButton2 {
-    background-color: #983f3f;
-    margin-right: 1rem;
-    color: white;
-    border: none;
-    font-size: 0.8rem;
-    margin-top: 0.5rem;
-    padding: 4px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .invitationButton:hover {
-    background-color: #007d00;
-  }
-  .invitationButton2:hover {
-    background-color: #8b0000;
-  }
-  
-  .connectionSection {
-    margin-top: 20px;
-  }
-  
+}
+
+/* Invitation section */
+.invitationSection {
+  margin-bottom: 30px;
+}
+
+/* Invitations list as flexbox */
+.invitationsList {
+  display: flex;
+  flex-direction: column;
+}
+
+.invitationCard {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  padding: 15px 20px;
+  border: 1px solid #ddd;
+  background-color: white;
+  border-radius: 8px;
+}
+
+/* Invitation details */
+.invitationDetails {
+  margin-left: 10px;
+}
+
+/* Invitation name and job */
+.invitationName {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #383838;
+}
+
+.invitationJob {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Invitation buttons */
+.invitationButton,
+.invitationButton2 {
+  background-color: #40983f;
+  margin-right: 1rem;
+  color: white;
+  border: none;
+  font-size: 0.8rem;
+  margin-top: 0.5rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.invitationButton2 {
+  background-color: #983f3f;
+}
+
+.invitationButton:hover {
+  background-color: #007d00;
+}
+
+.invitationButton2:hover {
+  background-color: #8b0000;
+}
+
+/* Connection section */
+.connectionSection {
+  margin-top: 20px;
+}
+
+/* Connection card */
+.connectionCard {
+  display: inline-block;
+  width: 180px;
+  text-align: center;
+  margin-right: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  color: rgb(33, 33, 33);
+  border-radius: 8px;
+  padding: 15px;
+}
+
+@media (max-width: 1024px) {
+  /* On medium screens, change connection cards to be 2 in a row */
   .connectionCard {
-    display: inline-block;
-    width: 180px;
-    text-align: center;
-    margin-right: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    color: rgb(33, 33, 33);
-    border-radius: 8px;
-    padding: 15px;
+    width: 65%;
+    margin-right: 15px;
   }
-  
-  .modalOverlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .modalContent {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    width: 300px;
-    text-align: center;
-  }
-  
-  .modalTitle {
-    font-size: 1.25rem;
-    margin-bottom: 10px;
-    color: black !important;
-  }
-  
-  .modalJob {
-    color: #555;
-    margin-bottom: 20px;
-  }
-  
-  .modalActions {
+}
+
+@media (max-width: 640px) {
+  /* On small screens, change connection cards to 1 per row */
+  .connectionCard {
+    width: 100%;
+    margin-right: 0;
     margin-bottom: 15px;
   }
-  
-  .acceptButton,
-  .rejectButton {
-    padding: 10px 20px;
-    margin: 5px;
-    cursor: pointer;
-    border-radius: 4px;
-    border: none;
+}
+
+/* Modal overlay */
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Modal content */
+.modalContent {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  /* On small screens, adjust modal width */
+  .modalContent {
+    width: 80%;
   }
-  
-  .acceptButton {
-    background-color: #4caf50;
-    color: white;
-  }
-  
-  .rejectButton {
-    background-color: #f44336;
-    color: white;
-  }
-  
-  .acceptButton:hover {
-    background-color: #45a049;
-  }
-  
-  .rejectButton:hover {
-    background-color: #e53935;
-  }
-  
-  .closeModal {
-    background-color: #888;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .closeModal:hover {
-    background-color: #666;
-  }
-  
+}
+
+/* Modal title and job */
+.modalTitle {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  color: black !important;
+}
+
+.modalJob {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Modal action buttons */
+.modalActions {
+  margin-bottom: 15px;
+}
+
+/* Accept and reject buttons */
+.acceptButton,
+.rejectButton {
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+}
+
+.acceptButton {
+  background-color: #4caf50;
+  color: white;
+}
+
+.rejectButton {
+  background-color: #f44336;
+  color: white;
+}
+
+.acceptButton:hover {
+  background-color: #45a049;
+}
+
+.rejectButton:hover {
+  background-color: #e53935;
+}
+
+/* Close modal button */
+.closeModal {
+  background-color: #888;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.closeModal:hover {
+  background-color: #666;
+}
