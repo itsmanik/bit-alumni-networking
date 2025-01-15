@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Home = () => {
   return (
     <>
-      <section className="text-[#434343] -translate-y-14 h-[100%] overflow-hidden">
+      <section className="text-[#434343] -translate-y-14 h-[100%] lg:overflow-hidden">
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm flex-1 lg:text-left">
             <h1 className="text-5xl font-bold leading-none sm:text-6xl">

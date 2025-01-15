@@ -1,6 +1,6 @@
 # BIT Sindri Networking Platform
 
-Welcome to the BIT Sindri Networking Platform, a web application designed to connect current students and alumni of BIT Sindri College. The platform fosters networking, mentorship, career guidance, and professional development by providing an easy-to-use interface for registration, login, and profile creation.
+Welcome to the BIT Sindri Networking Platform, a web application designed to connect current students and alumni of BIT Sindri College. The platform fosters networking, mentorship, career guidance, and professional development by providing an easy-to-use interface for registration, login, and profile creation. The platform is responsive, ensuring a seamless experience across desktops, tablets, and mobile devices.
 
 ---
 
