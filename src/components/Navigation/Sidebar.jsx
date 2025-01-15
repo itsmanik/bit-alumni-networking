@@ -1,5 +1,5 @@
 import { ChevronFirst, ChevronLast } from "lucide-react";
-import { createContext, useContext, useState } from "react";
+import { createContext, useContext, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 
 /* eslint-disable react/prop-types */ // TODO: upgrade to latest eslint tooling
@@ -8,6 +8,26 @@ const SidebarContext = createContext();
 
 export default function Sidebar({ children }) {
   const [expanded, setExpanded] = useState(true);
+
+  // Detect screen size using window.innerWidth
+  const checkScreenSize = () => {
+    if (window.innerWidth < 1024) { // Below 'lg' screen size (1024px)
+      setExpanded(false); // Collapse the sidebar on small screens
+    } else {
+      setExpanded(true); // Keep sidebar expanded on large screens
+    }
+  };
+
+  useEffect(() => {
+    checkScreenSize(); // Check initial screen size when the component mounts
+
+    // Add resize event listener to check screen size dynamically
+    window.addEventListener('resize', checkScreenSize);
+
+    // Cleanup event listener on component unmount
+    return () => window.removeEventListener('resize', checkScreenSize);
+  }, []);
+
   return (
     <>
       <aside className="h-screen relative lg:mt-12 shadow">
