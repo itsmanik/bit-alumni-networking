@@ -3,11 +3,11 @@ import React, { useEffect, useState } from "react";
 const Profile = () => {
   const [user, setUser] = useState([
     {
-      name: "John Doe",
+      name: "Manik S H",
       profile_picture: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJfO8hl9Z31uoxZIn76T8frM4SZqE0DA2PWA&s",
       role: "Software Developer",
-      username: "johndoe123",
-      email: "john.doe@example.com",
+      username: "maniksh2004",
+      email: "manik.doe@example.com",
       phone_number: "+1234567890",
       college: "Tech University"
     }
