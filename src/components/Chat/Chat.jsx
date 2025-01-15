@@ -112,7 +112,7 @@ const defaultChats = [
 ];
 
 const Chat = () => {
-  const [selectedChat, setSelectedChat] = useState(null);
+  const [selectedChat, setSelectedChat] = useState(5);
 
   return (
     <div className="chat flex flex-row w-full h-full">

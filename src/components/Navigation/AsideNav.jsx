@@ -48,15 +48,15 @@ const AsideNav = () => {
             location="/announcements"
           />
           <SidebarItem
+            icon={<MessageSquareMore size={20} />}
+            text="Mentorship"
+            location="/messaging"
+            active={true}
+          />
+          <SidebarItem
             icon={<ChartColumnIncreasing size={20} />}
             text="Analytics"
             location="/analytics"
-          />
-          <SidebarItem
-            icon={<MessageSquareMore size={20} />}
-            text="Messaging"
-            location="/messaging"
-            active={true}
           />
           <hr className="my-3" />
           <SidebarItem
