@@ -32,11 +32,6 @@ const AsideNav = () => {
             location="/events"
           />
           <SidebarItem
-            icon={<BriefcaseBusiness size={20} />}
-            text="Jobs"
-            location="/jobs"
-          />
-          <SidebarItem
             icon={<Bell size={20} />}
             text="Notifications"
             location="/notifications"
@@ -52,11 +47,6 @@ const AsideNav = () => {
             text="Announcements"
             location="/announcements"
           />
-          {/* <SidebarItem
-            icon={<Building2 size={20} />}
-            text="Companies"
-            location="/companies"
-          /> */}
           <SidebarItem
             icon={<ChartColumnIncreasing size={20} />}
             text="Analytics"
@@ -68,16 +58,11 @@ const AsideNav = () => {
             location="/messaging"
             active={true}
           />
+          <hr className="my-3" />
           <SidebarItem
             icon={<User size={20} />}
             text="Profile"
             location="/profile"
-          />
-          <hr className="my-3" />
-          <SidebarItem
-            icon={<Settings size={20} />}
-            text="Settings"
-            location="/settings"
           />
           <SidebarItem
             icon={<LifeBuoy size={20} />}
