@@ -6,18 +6,19 @@ const Help = () => {
     <div className={classes.helpPageContainer}>
       {/* Header */}
       <header className={classes.header}>
-        <h1>Welcome to Help Center</h1>
-        <p>Your guide to using our web app effectively</p>
+        <h1>Welcome to Alumni Connection Help Center</h1>
+        <p>Your guide to navigating our alumni networking and career platform</p>
       </header>
 
       {/* Introduction Section */}
       <section className={classes.introduction}>
-        <h2>About Our Web App</h2>
+        <h2>About Alumni Connection</h2>
         <p>
-          Our platform helps you stay connected with alumni, build your
-          professional network, and find exciting career opportunities. Whether
-          you're looking to reconnect with old friends, expand your professional
-          network, or search for new job openings, we've got you covered.
+          Our platform is designed to help you stay connected with alumni, grow
+          your professional network, and discover career opportunities. Whether
+          you're seeking mentorship, exploring job openings, or reconnecting with
+          your alumni community, we are here to support you in your professional
+          journey.
         </p>
       </section>
 
@@ -26,31 +27,31 @@ const Help = () => {
         <h2>Main Features</h2>
 
         <div className={classes.feature}>
-          <h3>Connect with Alumni</h3>
+          <h3>Reconnect with Alumni</h3>
           <p>
-            Our app allows you to reconnect with alumni from your institution.
-            Browse alumni profiles, send connection requests, and stay updated
-            on their career journeys. Networking with alumni can open up new
-            opportunities and provide valuable mentorship.
+            Use our platform to reconnect with alumni from your institution. You
+            can browse profiles, send connection requests, and stay informed
+            about their professional achievements. Alumni connections offer
+            valuable networking opportunities and mentorship.
           </p>
         </div>
 
         <div className={classes.feature}>
-          <h3>Add Connections</h3>
+          <h3>Expand Your Professional Network</h3>
           <p>
-            Build your network by adding connections with professionals in your
-            field. By connecting with others, you expand your professional
-            circle and increase the chances of finding job opportunities,
-            collaborations, and learning new skills.
+            Build and expand your professional network by connecting with alumni
+            and other professionals in your industry. Networking is a key
+            component for career advancement and personal growth.
           </p>
         </div>
 
         <div className={classes.feature}>
-          <h3>Look for Jobs</h3>
+          <h3>Find Career Opportunities</h3>
           <p>
-            Searching for jobs has never been easier. You can explore various
-            job listings tailored to your skills and interests. Apply directly
-            through the platform, and get updates on your applications.
+            Explore job listings specifically curated for alumni and professionals.
+            Filter job searches based on location, skills, and experience level.
+            Apply directly through the platform and track your applications
+            for quick updates.
           </p>
         </div>
       </section>
@@ -59,26 +60,27 @@ const Help = () => {
       <section className={classes.faq}>
         <h2>Frequently Asked Questions (FAQ)</h2>
         <div className={classes.faqItem}>
-          <h3>How do I connect with an alumni?</h3>
+          <h3>How do I reconnect with an alumni?</h3>
           <p>
-            Simply search for alumni from your institution, view their profiles,
-            and click "Connect" to send a connection request. If they accept,
-            you’ll be connected and can start messaging.
+            You can search for alumni profiles from your institution, send them
+            a connection request, and once they accept, you can start engaging
+            in conversations to reconnect or seek mentorship.
           </p>
         </div>
         <div className={classes.faqItem}>
-          <h3>How can I search for jobs?</h3>
+          <h3>How can I search for job opportunities?</h3>
           <p>
-            Navigate to the 'Jobs' section, where you can filter and search for
-            jobs based on location, industry, or job title. You can also save
-            jobs to apply to them later.
+            Head over to the 'Jobs' section, where you can search for roles based
+            on industry, location, or job title. Filter results according to your
+            preferences and apply directly for jobs that interest you.
           </p>
         </div>
         <div className={classes.faqItem}>
-          <h3>Can I get job recommendations?</h3>
+          <h3>Can I get job recommendations tailored to my profile?</h3>
           <p>
-            Yes, we provide personalized job recommendations based on your
-            profile, skills, and interests.
+            Yes, we offer personalized job recommendations based on your profile
+            information, skills, and interests, ensuring that you find the best
+            opportunities suited to your background.
           </p>
         </div>
       </section>
@@ -86,10 +88,10 @@ const Help = () => {
       {/* Contact Section */}
       <section className={classes.contact}>
         <h2>Contact Support</h2>
-        <p>If you need further assistance, don't hesitate to contact us.</p>
+        <p>If you need further assistance, we're here to help!</p>
         <p>
-          Email us at:{" "}
-          <a href="mailto:support@ourapp.com">support@ourapp.com</a>
+          Reach out to us at:{" "}
+          <a href="mailto:support@alumniconnection.com">support@alumniconnection.com</a>
         </p>
       </section>
     </div>
